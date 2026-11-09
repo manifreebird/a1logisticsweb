@@ -1,0 +1,5 @@
+# Force HTTPS + non-www (single hop, clean)
+http://www.a1logistics.in/* https://a1logistics.in/:splat 301!
+http://a1logistics.in/* https://a1logistics.in/:splat 301!
+https://www.a1logistics.in/* https://a1logistics.in/:splat 301!
+

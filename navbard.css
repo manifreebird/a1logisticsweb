@@ -1,0 +1,153 @@
+/* ===============================
+   NAVBAR — FIXED & CONTAINED
+================================ */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: 72px;                /* 🔒 LOCK HEIGHT */
+  background: white;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  position: relative;          /* ✅ anchor for dropdown */
+}
+
+.navbar .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===============================
+   LOGO
+================================ */
+
+.logo-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  height: 73px !important;     /* ⚠️ visually oversized (intentional) */
+  width: auto;
+  display: block;
+}
+
+/* ===============================
+   DESKTOP NAV LINKS
+================================ */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+}
+
+/* ===============================
+   HAMBURGER
+================================ */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1200; /* 🔥 always above menu */
+}
+
+.hamburger span {
+  width: 26px;
+  height: 2px;
+  background: #000;
+  transition: 0.3s ease;
+}
+
+/* Cross animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===============================
+   MOBILE — CONTAINED DROPDOWN
+================================ */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 64px;
+  }
+
+  .logo-img {
+    height: 65px !important;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* 🔥 KEY FIX: menu stays INSIDE navbar width */
+  .nav-links {
+    position: absolute;
+    top: 100%;                 /* below navbar */
+    left: 0;
+    right: 0;
+
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    max-height: calc(100vh - 64px); /* viewport minus navbar */
+    overflow-y: auto;               /* ✅ internal scroll */
+    -webkit-overflow-scrolling: touch;
+
+    padding: 24px 0;
+
+    transform: translateY(-16px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition:
+      transform 0.35s cubic-bezier(.22,1,.36,1),
+      opacity 0.25s ease;
+
+    z-index: 1100;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+    padding: 12px 24px;
+    width: 100%;
+    text-align: center;
+  }
+}

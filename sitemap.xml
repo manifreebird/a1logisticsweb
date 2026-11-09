@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://a1logistics.in/</loc>
+    <!-- <lastmod>2026-01-29</lastmod> -->
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/hitehcitypic.jpg</image:loc>
+      <image:title>Hitech City Cyber Towers Hyderabad - Employee Transport</image:title>
+      <image:caption>Employee Transport Service Hyderabad</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/cars1.jpeg</image:loc>
+      <image:title>Corporate Sedan for Employee Commute</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/cars2.jpeg</image:loc>
+      <image:title>Corporate SUV Fleet Hyderabad</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/busescorporate.webp</image:loc>
+      <image:title>Corporate Shuttle Bus Services</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/bus.jpg</image:loc>
+      <image:title>Employee Transport Bus</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/employeesbus.jpg</image:loc>
+      <image:title>Employees Commuting via Shuttle</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/dzire2.jpeg</image:loc>
+      <image:title>Maruti Dzire Corporate Cab</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/fleetimg.jpg</image:loc>
+      <image:title>A1 Logistics Fleet Overview</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/sreefleet.jpg</image:loc>
+      <image:title>Corporate Cab Fleet</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/images/fleetcar1.jpg</image:loc>
+      <image:title>Employee Transportation Vehicle</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://a1logistics.in/public/imagecar.jpg</image:loc>
+      <image:title>A1 Logistics Safety and Reliability</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://a1logistics.in/public/logo.png</image:loc>
+      <image:title>A1 Logistics Logo</image:title>
+    </image:image>
+
+
+<image:image>
+  <image:loc>https://a1logistics.in/favicon.ico</image:loc>
+  <image:title>Website Favicon</image:title>
+</image:image>
+
+    
+
+  </url>
+</urlset>
